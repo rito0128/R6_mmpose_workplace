@@ -1,0 +1,6 @@
+#無視するディレクトリ
+/img_dir/
+/motion_1/
+/output/
+/predictions/
+/bag_files/
