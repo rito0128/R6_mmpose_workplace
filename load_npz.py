@@ -1,11 +1,13 @@
 # npzを読み込む
 import numpy as np
 
-# input_file = input().strip()
-input_file = "predictions\converted_npz\img_001.npz"
+input_file = input().strip()
+# input_file = "test_output_2d_anotation.npz"
 
 data = np.load(input_file, allow_pickle = True)
 keys = list(data.keys())
+
+print(str(input_file))
 
 # キーを表示
 for key in keys:
