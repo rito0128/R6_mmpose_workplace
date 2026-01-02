@@ -49,7 +49,7 @@ def append_data_to_npz(target_npz_path, source_npz_path, target_key, source_key=
 # --- 使用例 ---
 # target の 'keypoints_2d' の後ろに、source の 'keypoints_2d' を追加する場合
 append_data_to_npz(
-    target_npz_path='npz_file/original_train_anotation.npz', 
-    source_npz_path='npz_file/m3_output_3d_anotation.npz', 
+    target_npz_path='npz_file/original_test_anotation.npz', 
+    source_npz_path='npz_file/sourse_original_test_anotation.npz', 
     target_key='S'
 )

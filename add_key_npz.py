@@ -88,23 +88,23 @@ def save_sequential_string_array_to_npz(file_path, key_name, prefix, count, star
     print(f"例: {content[key_name][0]} ... {content[key_name][-1]}")
     print(f"最終的なデータ型 (dtype): {content[key_name].dtype}")
 
-# --- 連番の要素を追加---
-save_sequential_string_array_to_npz(
-    file_path='npz_file/original_train_anotation.npz', 
-    key_name='imgname', 
-    prefix='hm001_judo.C1', 
-    count=11040,   # 11040個生成
-    start_num=1,   # 1から開始
-    digits=5,      # 5桁 (00001) に設定
-    dtype_str='U70' # 文字列が長くなるのでU20に拡張
-)
-
-# # --- キーと要素を追加 ---
-# # 'metadata.npz' に 'action' というキーで 'walking' を 50個入れる (最大10文字)
-# save_string_array_to_npz(
+# # --- 連番の要素を追加---
+# save_sequential_string_array_to_npz(
 #     file_path='npz_file/original_train_anotation.npz', 
-#     key_name='subject', 
-#     string_value='hm001', 
-#     count=11040,
-#     dtype_str='U10'
+#     key_name='imgname', 
+#     prefix='hm001_judo.C1', 
+#     count=11040,   # 11040個生成
+#     start_num=1,   # 1から開始
+#     digits=5,      # 5桁 (00001) に設定
+#     dtype_str='U70' # 文字列が長くなるのでU20に拡張
 # )
+
+# --- キーと要素を追加 ---
+# 'metadata.npz' に 'action' というキーで 'walking' を 50個入れる (最大10文字)
+save_string_array_to_npz(
+    file_path='npz_file/original_train_anotation.npz', 
+    key_name='subject', 
+    string_value='hm001', 
+    count=11040,
+    dtype_str='U10'
+)

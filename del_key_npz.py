@@ -37,4 +37,4 @@ def remove_key_from_npz(file_path, keys_to_remove):
 
 # --- 使用例 ---
 # 'metadata.npz' から 'action' と 'old_key' を削除する場合
-remove_key_from_npz('test.npz', ['action'])
+remove_key_from_npz('npz_file/original_test_anotation.npz', ['keypoints_2d', 'S'])
